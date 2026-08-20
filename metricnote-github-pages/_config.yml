@@ -1,7 +1,0 @@
-title: Metric Note
-description: 통계와 데이터 분석을 공부하며 기록하는 노트
-lang: ko-KR
-theme: minima
-markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
-
