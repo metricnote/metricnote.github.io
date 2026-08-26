@@ -10,6 +10,7 @@ title: Metric Note
 
 ## 최근 글
 
+- [LLM은 문장을 어떻게 학습 데이터로 바꿀까: 토큰화부터 슬라이딩 윈도우까지]({% post_url 2026-08-26-llm-tokenization-sliding-window %})
 - [건물 특성과 에너지 효율성의 관계 분석]({% post_url 2026-08-20-energy-efficiency-analysis %})
 
 ## 이 블로그에서 다룰 내용
@@ -17,5 +18,6 @@ title: Metric Note
 - 기술통계량을 읽는 방법
 - 데이터 시각화와 탐색적 데이터 분석
 - 통계 모델의 결과와 한계
+- LLM과 Transformer의 동작 원리
 - 분석 과정에서 새롭게 배운 점과 다음 질문
 
