@@ -3,21 +3,54 @@ layout: home
 title: Metric Note
 ---
 
-# 숫자를 읽고, 해석을 기록합니다
+<section class="home-hero">
+  <p class="hero-kicker">LEARNING, EXPLAINED</p>
+  <h1>배운 것을<br>내 언어로 다시 씁니다.</h1>
+  <p class="hero-description">
+    데이터 분석에서 LLM과 Transformer까지. 코드를 실행하는 데서 멈추지 않고,
+    왜 그렇게 동작하는지 이해한 과정을 차근차근 기록합니다.
+  </p>
+  <div class="topic-pills" aria-label="주요 학습 주제">
+    <span>Data Analysis</span>
+    <span>Statistics</span>
+    <span>LLM</span>
+    <span>Transformer</span>
+  </div>
+</section>
 
-통계와 데이터 분석을 공부하면서 단순히 코드를 실행하는 데 그치지 않고,
-숫자가 보여주는 현상을 제 언어로 해석하는 과정을 기록합니다.
+<div class="section-heading">
+  <h2>최근 학습 기록</h2>
+  <p>직접 실습하고 이해한 내용을 정리합니다.</p>
+</div>
 
-## 최근 글
+<div class="post-grid">
+  <a class="post-card" href="{% post_url 2026-08-26-llm-tokenization-sliding-window %}">
+    <div class="post-card__inner">
+      <span class="post-card__meta">LLM · TOKENIZATION</span>
+      <h3>LLM은 문장을 어떻게 학습 데이터로 바꿀까</h3>
+      <p>토큰화와 Token ID부터 BPE, 슬라이딩 윈도우로 문제와 정답을 만드는 과정까지 정리했습니다.</p>
+      <span class="post-card__more">글 읽기 →</span>
+    </div>
+  </a>
 
-- [LLM은 문장을 어떻게 학습 데이터로 바꿀까: 토큰화부터 슬라이딩 윈도우까지]({% post_url 2026-08-26-llm-tokenization-sliding-window %})
-- [건물 특성과 에너지 효율성의 관계 분석]({% post_url 2026-08-20-energy-efficiency-analysis %})
+  <a class="post-card" href="{% post_url 2026-08-20-energy-efficiency-analysis %}">
+    <div class="post-card__inner">
+      <span class="post-card__meta">STATISTICS · EDA</span>
+      <h3>건물 특성과 에너지 효율성의 관계 분석</h3>
+      <p>기초통계량과 상관관계, 선형회귀와 잔차를 통해 건물의 난방·냉방 부하를 해석했습니다.</p>
+      <span class="post-card__more">글 읽기 →</span>
+    </div>
+  </a>
+</div>
 
-## 이 블로그에서 다룰 내용
+<div class="section-heading">
+  <h2>지금 따라가는 학습 흐름</h2>
+  <p>개념이 다음 개념으로 이어지는 과정을 기록합니다.</p>
+</div>
 
-- 기술통계량을 읽는 방법
-- 데이터 시각화와 탐색적 데이터 분석
-- 통계 모델의 결과와 한계
-- LLM과 Transformer의 동작 원리
-- 분석 과정에서 새롭게 배운 점과 다음 질문
-
+<div class="learning-path">
+  <div class="learning-step"><b>01</b><span>Embedding</span></div>
+  <div class="learning-step"><b>02</b><span>Attention</span></div>
+  <div class="learning-step"><b>03</b><span>GPT 구현</span></div>
+  <div class="learning-step"><b>04</b><span>Pretraining</span></div>
+</div>
