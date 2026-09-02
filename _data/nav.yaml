@@ -1,9 +1,9 @@
 - title: LLM
-  url: category/llm.html
+  url: category/llm/
   hue: "var(--c-themeHuePurple)"
 - title: Data Analysis
-  url: category/data-analysis.html
+  url: category/data-analysis/
   hue: "var(--c-themeHueBlue)"
 - title: Statistics
-  url: category/statistics.html
+  url: category/statistics/
   hue: "var(--c-themeHueGreen)"
