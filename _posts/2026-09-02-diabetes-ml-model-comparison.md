@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "당뇨병 진행도 예측: 작은 데이터에서 머신러닝을 선택한 이유"
-date: 2026-09-02 18:00:00 +0900
+date: 2026-09-02 17:00:00 +0900
 category: [ai, data-analysis]
 tags: [Machine-Learning, Regression, Diabetes, LightGBM, Decision-Tree, Random-Forest, Feature-Importance, MAPE, Python, learning-note]
 ---
