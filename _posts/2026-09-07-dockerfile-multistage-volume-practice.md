@@ -54,7 +54,7 @@ docker build --tag linux-container:1.0 \
 
 컨테이너에서 `lsb_release -a`를 실행해 Ubuntu 24.04가 적용된 것을 확인했다.
 
-![ARG로 Ubuntu 24.04를 적용한 결과]({{ '/assets/images/dockerfile-practice/02-arg-ubuntu-24.png' | relative_url }})
+![ARG로 Ubuntu 24.04를 적용한 결과]({{ '/assets/images/dockerfile-practice/02-arg-ubuntu-24-clean.png' | relative_url }})
 
 ## 3. 이미지 메타데이터와 포트
 
