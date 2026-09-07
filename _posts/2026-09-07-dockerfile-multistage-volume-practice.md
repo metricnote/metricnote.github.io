@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker 기초 실습: Dockerfile부터 Multi-Stage Build와 볼륨까지"
-date: 2026-09-07 18:10:00 +0900
+date: 2026-09-07 18:00:00 +0900
 category: [cloud, docker]
 tags: [Docker, Dockerfile, Multi-Stage-Build, Nginx, Volume, ENTRYPOINT, CMD, learning-note]
 ---
