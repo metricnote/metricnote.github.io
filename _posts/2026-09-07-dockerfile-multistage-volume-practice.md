@@ -29,7 +29,7 @@ docker build -t vue-frontend:latest .
 docker run -d --name vue-frontend -p 8080:80 vue-frontend:latest
 ```
 
-![Vue Multi-Stage 빌드 결과]({{ '/assets/images/dockerfile-practice/01-vue-multistage-result.png' | relative_url }})
+![Vue Multi-Stage 빌드 결과]({{ '/assets/images/dockerfile-practice/01-vue-multistage-clean.png' | relative_url }})
 
 Multi-Stage Build를 사용하면 빌드 도구와 소스 전체를 최종 이미지에 넣지 않고 실행에 필요한 결과물만 담을 수 있다.
 
