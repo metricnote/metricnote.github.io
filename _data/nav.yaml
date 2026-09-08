@@ -7,3 +7,12 @@
 - title: Statistics
   url: category/statistics/
   hue: "var(--c-themeHueGreen)"
+- title: Docker
+  url: category/docker/
+  hue: "var(--c-themeHueOrange)"
+- title: Spring
+  url: category/spring/
+  hue: "var(--c-themeHueGreen)"
+- title: Spring AI
+  url: category/spring-ai/
+  hue: "var(--c-themeHuePurple)"
