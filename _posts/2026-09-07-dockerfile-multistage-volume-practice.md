@@ -2,7 +2,7 @@
 layout: post
 title: "Docker 실습 정리: Dockerfile부터 이미지 레이어와 OverlayFS까지"
 date: 2026-09-07 18:00:00 +0900
-last_modified_at: 2026-09-09 09:19:00 +0900
+last_modified_at: 2026-09-09 10:12:00 +0900
 category: [backend-cloud]
 tags: [Docker, Dockerfile, MariaDB, Volume, Bind-Mount, Nginx, Multi-Stage-Build, ENTRYPOINT, CMD, PID-1, SIGTERM, OverlayFS, rootfs, learning-note]
 ---
@@ -50,6 +50,10 @@ SELECT * FROM key_value;
 ```
 
 DBeaver에서도 `localhost:3306`으로 접속해 같은 데이터를 확인했다. 이 실습을 통해 컨테이너 안에서 실행되는 데이터베이스도 포트를 공개하면 호스트의 일반 프로그램에서 접근할 수 있다는 것을 확인했다.
+
+추가로 MariaDB 컨테이너의 `users` 테이블을 조회해 저장된 더미 사용자 데이터가 정상적으로 반환되는 것도 확인했다.
+
+![MariaDB 컨테이너에서 users 테이블을 조회한 결과]({{ '/assets/images/dockerfile-practice/08-mariadb-users-query.png' | relative_url }})
 
 ## 2. 볼륨과 Bind Mount로 데이터 연결
 
