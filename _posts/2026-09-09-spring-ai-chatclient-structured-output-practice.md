@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spring AI 실습: ChatClient부터 PromptTemplate과 Structured Output까지"
-date: 2026-09-09 18:00:00 +0900
+date: 2026-09-09 17:00:00 +0900
 category: [backend-cloud]
 tags: [Spring-AI, ChatClient, ChatOptions, PromptTemplate, SystemMessage, BeanOutputConverter, Structured-Output, Java, learning-note]
 ---
