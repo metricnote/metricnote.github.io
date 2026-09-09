@@ -210,6 +210,8 @@ docker logs linux-container
 
 Exec Form과 `exec`를 사용한 방식에서는 Python이 PID 1이었고, 종료 로그에서 `SIGTERM 신호 수신`과 처리 완료를 확인했다. 반면 단순 Shell Form은 shell이 PID 1이어서 신호가 애플리케이션까지 올바르게 전달되지 않을 수 있었다.
 
+![Python이 PID 1로 실행되고 SIGTERM을 처리한 결과]({{ '/assets/images/dockerfile-practice/06-pid1-sigterm-result.png' | relative_url }})
+
 이 차이는 서버가 종료 전에 진행 중인 요청을 마치고 연결과 자원을 정리하는 **Graceful Shutdown**과 연결된다.
 
 ## 8. Vue Multi-Stage Build
@@ -294,6 +296,8 @@ python3 -m json.tool extracted/manifest.json
 ```
 
 `manifest.json`의 `Layers` 배열에서 MariaDB 이미지가 8개의 파일시스템 레이어로 구성된 것을 확인했다. 첫 번째 레이어를 풀자 다음과 같은 리눅스 rootfs 디렉터리가 나타났다.
+
+![MariaDB 이미지의 첫 번째 파일시스템 레이어를 압축 해제한 결과]({{ '/assets/images/dockerfile-practice/07-mariadb-first-layer.png' | relative_url }})
 
 ```text
 bin  boot  dev  etc  home  lib  media  mnt
