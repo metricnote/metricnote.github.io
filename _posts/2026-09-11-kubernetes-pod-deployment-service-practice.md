@@ -129,9 +129,11 @@ docker login "$DOCKER_REGISTRY" \
   --password-stdin
 ```
 
-Spring 이미지 `1.0`이 울산 Harbor Registry에 Push된 것을 확인했다.
+Spring 이미지 `1.0`이 울산 Harbor Registry에 Push된 것을 확인했다. 빌드 스크립트에서는 교육생 번호, 이미지 이름과 버전을 조합하고 `linux/amd64`, `linux/arm64` 플랫폼을 대상으로 이미지를 생성한다.
 
-![Harbor Registry에 Push된 webserver 1.0 이미지]({{ '/assets/images/kubernetes-intro-practice/01-harbor-webserver-v1.png' | relative_url }})
+![docker-build.sh를 이용한 멀티 아키텍처 이미지 빌드 과정]({{ '/assets/images/kubernetes-intro-practice/01-harbor-webserver-v1.png' | relative_url }})
+
+*`docker-build.sh`의 구성과 Buildx 실행 흐름을 확인한 화면.*
 
 ### 컨테이너 이름 충돌
 
@@ -149,13 +151,31 @@ docker stop frontend
 docker rm frontend
 ```
 
-FastAPI `2.0`, 정적 Frontend와 Vue Frontend가 모두 로컬에서 정상적으로 실행되는 것을 확인했다.
+FastAPI `2.0`, 정적 Frontend와 Vue Frontend가 모두 로컬에서 정상적으로 실행되는 것을 확인했다. 세 이미지는 동일한 결과를 반복한 것이 아니라 서로 다른 컨테이너를 차례대로 검증한 결과다.
+
+### FastAPI 2.0 실행 확인
+
+FastAPI 이미지를 실행해 서버 상태와 Ready 상태를 변경할 수 있는 상태 확인 화면이 열리는지 검증했다.
 
 ![FastAPI 2.0 컨테이너 로컬 실행 결과]({{ '/assets/images/kubernetes-intro-practice/02-fastapi-local-test.png' | relative_url }})
 
+*FastAPI `webserver:2.0` 컨테이너의 상태 확인 화면.*
+
+### Nginx 정적 Frontend 실행 확인
+
+다음으로 HTML, CSS와 JavaScript 정적 파일을 Nginx로 제공하는 `frontend:1.0` 이미지를 실행했다.
+
 ![Nginx 기반 정적 Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/03-static-frontend.png' | relative_url }})
 
+*Nginx 기반 정적 Frontend 컨테이너의 주문 관리 화면.*
+
+### Vue Frontend 실행 확인
+
+마지막으로 Vue SPA를 빌드한 `vue-frontend:1.0` 이미지를 실행했다. 화면 구성은 정적 Frontend와 유사하지만 구현 방식과 빌드 과정이 다르다.
+
 ![Vue Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/04-vue-frontend.png' | relative_url }})
+
+*Vue.js로 구현한 Frontend 컨테이너의 주문 관리 화면.*
 
 ## 6. Pod 직접 배포
 
