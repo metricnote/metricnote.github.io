@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "모델 저장부터 FastAPI 서빙까지: scikit-learn·PyTorch·Keras 실습"
-date: 2026-09-16 18:00:00 +0900
+date: 2026-09-16 17:00:00 +0900
 category: [ai]
 tags: [Model-Serving, MLOps, Scikit-learn, PyTorch, Keras, FastAPI, Pickle, TorchScript, TensorFlow, Uvicorn, Performance-Test, learning-note]
 ---
