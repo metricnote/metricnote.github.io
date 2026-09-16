@@ -62,7 +62,7 @@ command python train_and_pickle.py
 [데이터] 테스트셋 저장 완료: test_data.npz
 ```
 
-![scikit-learn 모델 학습과 pickle 저장 결과]({{ '/assets/images/model-serving-day1/01-sklearn-train-pickle.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/01-sklearn-train-pickle.png' | relative_url }}" alt="scikit-learn 모델 학습과 pickle 저장 결과"></p>
 
 생성된 파일의 역할은 다음과 같다.
 
@@ -147,13 +147,13 @@ FastAPI가 자동 생성한 `/docs` 화면에서는 별도의 API 테스트 프�
 }
 ```
 
-![scikit-learn FastAPI의 setosa 예측 결과]({{ '/assets/images/model-serving-day1/02-sklearn-fastapi-setosa.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/02-sklearn-fastapi-setosa.png' | relative_url }}" alt="scikit-learn FastAPI의 setosa 예측 결과"></p>
 
 versicolor와 virginica 측정값도 차례로 전송했다.
 
-![scikit-learn FastAPI의 versicolor 예측 결과]({{ '/assets/images/model-serving-day1/03-sklearn-fastapi-versicolor.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/03-sklearn-fastapi-versicolor.png' | relative_url }}" alt="scikit-learn FastAPI의 versicolor 예측 결과"></p>
 
-![scikit-learn FastAPI의 virginica 예측 결과]({{ '/assets/images/model-serving-day1/04-sklearn-fastapi-virginica.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/04-sklearn-fastapi-virginica.png' | relative_url }}" alt="scikit-learn FastAPI의 virginica 예측 결과"></p>
 
 세 요청 모두 HTTP `200 OK`와 올바른 품종을 반환했다. 서버 시작 로그의 모델 로드 메시지는 한 번만 출력됐고, 세 예측은 메모리에 있는 같은 모델을 재사용했다.
 
@@ -251,7 +251,7 @@ p99:     8.08 ms
 
 모델을 `iris_model.keras`로 저장한 뒤, 모델 구조를 다시 작성하지 않고 `load_model()`로 복원했다.
 
-![Keras 모델 구조와 복원 결과]({{ '/assets/images/model-serving-day1/05-keras-model-restore.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/05-keras-model-restore.png' | relative_url }}" alt="Keras 모델 구조와 복원 결과"></p>
 
 모델 요약에서 학습 대상 파라미터가 243개임을 확인했다.
 
@@ -288,11 +288,11 @@ command uvicorn app:app --host 127.0.0.1 --port 8341
 
 세 가지 품종을 차례로 요청한 결과 모두 HTTP `200 OK`와 올바른 클래스를 반환했다.
 
-![Keras FastAPI의 setosa 예측 결과]({{ '/assets/images/model-serving-day1/06-keras-setosa.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/06-keras-setosa.png' | relative_url }}" alt="Keras FastAPI의 setosa 예측 결과"></p>
 
-![Keras FastAPI의 versicolor 예측 결과]({{ '/assets/images/model-serving-day1/07-keras-versicolor.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/07-keras-versicolor.png' | relative_url }}" alt="Keras FastAPI의 versicolor 예측 결과"></p>
 
-![Keras FastAPI의 virginica 예측 결과]({{ '/assets/images/model-serving-day1/08-keras-virginica.png' | relative_url }})
+<p align="center"><img src="{{ '/assets/images/model-serving-day1/08-keras-virginica.png' | relative_url }}" alt="Keras FastAPI의 virginica 예측 결과"></p>
 
 첫 번째 요청의 지연시간은 약 78ms였고 이후 약 52ms, 38ms로 줄었다. TensorFlow가 첫 요청에서 내부 계산을 준비하는 워밍업 비용이 포함됐을 가능성이 있다. 다만 지연시간은 실행 환경마다 달라지므로 이번 실습에서는 수치 자체보다 세 요청이 모두 정상 처리됐다는 점을 성공 기준으로 삼았다.
 
