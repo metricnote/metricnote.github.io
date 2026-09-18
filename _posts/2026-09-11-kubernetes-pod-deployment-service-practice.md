@@ -131,10 +131,6 @@ docker login "$DOCKER_REGISTRY" \
 
 Spring 이미지 `1.0`이 울산 Harbor Registry에 Push된 것을 확인했다. 빌드 스크립트에서는 교육생 번호, 이미지 이름과 버전을 조합하고 `linux/amd64`, `linux/arm64` 플랫폼을 대상으로 이미지를 생성한다.
 
-![docker-build.sh를 이용한 멀티 아키텍처 이미지 빌드 과정]({{ '/assets/images/kubernetes-intro-practice/01-harbor-webserver-v1.png' | relative_url }})
-
-*`docker-build.sh`의 구성과 Buildx 실행 흐름을 확인한 화면.*
-
 ### 컨테이너 이름 충돌
 
 로컬 테스트 중 `frontend`와 `vue-frontend`라는 이름의 이전 컨테이너가 남아 다음 오류가 발생했다.
