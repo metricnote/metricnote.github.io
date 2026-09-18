@@ -54,6 +54,8 @@ public Flux<String> chatStream(@RequestParam String userInput) {
 
 기존 메서드를 채우지 않고 같은 이름의 메서드를 새로 작성해 `method is already defined` 오류가 발생했고, 스트리밍 메서드에서 `call()`을 사용해 `String cannot be converted to Flux<String>` 오류도 경험했다. 기존 메서드 본문만 구현하고 `stream()`을 사용해 해결했다.
 
+![기본 ChatClient 자기소개 응답]({{ '/assets/images/spring-ai-practice-2026-09-09/02-chat-basic-result-cropped.png' | relative_url }})
+
 ## 3. ChatOptions로 모델 응답 설정
 
 ![ChatOptions 추가 실습 자료]({{ '/assets/images/spring-ai-practice-2026-09-09/02-chat-options-slide.png' | relative_url }})
