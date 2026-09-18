@@ -161,7 +161,7 @@ FastAPI 이미지를 실행해 서버 상태와 Ready 상태를 변경할 수 �
 
 다음으로 HTML, CSS와 JavaScript 정적 파일을 Nginx로 제공하는 `frontend:1.0` 이미지를 실행했다.
 
-![Nginx 기반 정적 Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/03-static-frontend.png' | relative_url }})
+![Nginx 기반 정적 Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/03-static-frontend-cropped.png' | relative_url }})
 
 *Nginx 기반 정적 Frontend 컨테이너의 주문 관리 화면.*
 
@@ -169,7 +169,7 @@ FastAPI 이미지를 실행해 서버 상태와 Ready 상태를 변경할 수 �
 
 마지막으로 Vue SPA를 빌드한 `vue-frontend:1.0` 이미지를 실행했다. 화면 구성은 정적 Frontend와 유사하지만 구현 방식과 빌드 과정이 다르다.
 
-![Vue Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/04-vue-frontend.png' | relative_url }})
+![Vue Frontend 실행 결과]({{ '/assets/images/kubernetes-intro-practice/04-vue-frontend-cropped.png' | relative_url }})
 
 *Vue.js로 구현한 Frontend 컨테이너의 주문 관리 화면.*
 
