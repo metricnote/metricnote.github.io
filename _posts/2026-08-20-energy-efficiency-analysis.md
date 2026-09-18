@@ -126,13 +126,7 @@ MAE는 실제값과 예측값 사이의 평균 절대오차다. 두 모델 모�
 
 마지막으로 이 데이터에서는 전체 높이와 표면적 등 건물 형상 관련 변수가 Y1·Y2와 비교적 강한 선형관계를 보였다. 다만 관찰 데이터의 상관관계와 회귀계수만으로 직접적인 원인이라고 해석할 수는 없다.
 
-## 분석 자료
-
-- [전체 분석 보고서 PDF](/files/energy-efficiency-report.pdf)
-- [Jupyter Notebook](/files/energy-efficiency-analysis.ipynb)
-
 ## 참고 자료
 
 - Tsanas, A. & Xifara, A. (2012). Energy Efficiency Dataset. UCI Machine Learning Repository.
-
 

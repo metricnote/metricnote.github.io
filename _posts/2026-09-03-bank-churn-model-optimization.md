@@ -8,10 +8,6 @@ tags: [Machine-Learning, Classification, Bank-Churn, CatBoost, XGBoost, LightGBM
 
 이번 실습에서는 은행 고객 정보로 고객의 이탈 여부인 `Exited`를 예측했다. 목표는 여러 모델을 실행해 가장 높은 숫자를 찾는 데 그치지 않고, 데이터의 특성을 먼저 파악한 뒤 왜 특정 모델과 변수를 선택했는지 설명하고 그 결정이 처음 보는 데이터에서도 유지되는지 확인하는 것이었다.
 
-실행 가능한 전체 코드는 아래 노트북에서 확인할 수 있다.
-
-- [실습 노트북 내려받기]({{ '/files/bank-churn-model-optimization.ipynb' | relative_url }})
-
 ## 1. 문제 정의와 평가 기준
 
 예측 대상은 고객 이탈 여부를 나타내는 이진 변수다.

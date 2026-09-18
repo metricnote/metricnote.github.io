@@ -8,16 +8,7 @@ tags: [Spring-AI, ChatClient, ChatOptions, PromptTemplate, SystemMessage, Struct
 
 하루 동안 Spring AI 예제 프로젝트를 실행하며 ChatClient의 기본 호출부터 동적 프롬프트, 구조화 출력, Advisor, 임베딩과 RAG까지 순서대로 실습했다. OpenAI 모델의 응답을 Java 객체로 변환하고, Docker의 PostgreSQL·pgvector에 문서를 저장했으며, 로컬 BAAI/bge-m3 임베딩 모델과 PDF RAG-ETL도 연결했다. 마지막에는 헌법 전문을 기반으로 RewriteQueryTransformer와 CompressionQueryTransformer를 적용했다.
 
-## 1. 실습 프로젝트 준비
-
-실습 코드는 GitHub 저장소에서 내려받았다.
-
-```bash
-git clone https://github.com/himang10/spring-ai.git
-```
-
-저장소는 직접 작성하는 `01.training-code`, 정답 참고용 `02.answer-code`, RAG용 `pgvector`, 로컬 임베딩용 `embedding-model` 등으로 구성돼 있었다.
-
+## 1. 실습 환경 준비
 
 Java 21과 Maven을 사용했고 OpenAI API 키는 소스나 설정 파일에 넣지 않고 터미널 환경변수로 전달했다.
 
