@@ -56,8 +56,6 @@ public Flux<String> chatStream(@RequestParam String userInput) {
 
 ## 3. ChatOptions로 모델 응답 설정
 
-![ChatOptions 추가 실습 자료]({{ '/assets/images/spring-ai-practice-2026-09-09/02-chat-options-slide.png' | relative_url }})
-
 ```java
 ChatOptions.Builder<?> chatOptions = ChatOptions.builder()
         .model("gpt-4o-mini")
