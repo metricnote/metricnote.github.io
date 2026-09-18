@@ -74,7 +74,7 @@ return this.chatClient.prompt()
 
 `temperature`는 사실성을 보장하는 옵션이 아니라 표현의 변동성을 조절하고, `topP`는 다음 토큰 후보의 확률 범위를 제한한다.
 
-![ChatOptions를 적용한 ChatClient 응답]({{ '/assets/images/spring-ai-practice-2026-09-09/03-chat-result.png' | relative_url }})
+![ChatOptions를 적용한 ChatClient 응답]({{ '/assets/images/spring-ai-practice-2026-09-09/03-chat-result-cropped.png' | relative_url }})
 
 ## 4. PromptTemplate와 System Message
 
