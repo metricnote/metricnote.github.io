@@ -122,8 +122,6 @@ docker build --tag linux-container:1.0 \
   --build-arg UBUNTU_VERSION=24.04 .
 ```
 
-![ARG로 Ubuntu 24.04를 적용한 결과]({{ '/assets/images/dockerfile-practice/02-arg-ubuntu-24-clean.png' | relative_url }})
-
 각 명령의 역할은 다음과 같다.
 
 - `ARG`: 이미지 빌드 중에만 사용하는 변수
@@ -238,8 +236,6 @@ COPY --from=build /app/dist/ /usr/share/nginx/html/
 docker build -t vue-frontend:latest .
 docker run -d --name vue-frontend -p 8080:80 vue-frontend:latest
 ```
-
-![Vue Multi-Stage 빌드 결과]({{ '/assets/images/dockerfile-practice/01-vue-multistage-clean.png' | relative_url }})
 
 흐름은 다음과 같다.
 
