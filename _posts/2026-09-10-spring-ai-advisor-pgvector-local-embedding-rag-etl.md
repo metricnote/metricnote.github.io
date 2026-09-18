@@ -18,7 +18,6 @@ git clone https://github.com/himang10/spring-ai.git
 
 저장소는 직접 작성하는 `01.training-code`, 정답 참고용 `02.answer-code`, RAG용 `pgvector`, 로컬 임베딩용 `embedding-model` 등으로 구성돼 있었다.
 
-![Spring AI 실습 코드 구성]({{ '/assets/images/spring-ai-practice-2026-09-09/01-source-structure.png' | relative_url }})
 
 Java 21과 Maven을 사용했고 OpenAI API 키는 소스나 설정 파일에 넣지 않고 터미널 환경변수로 전달했다.
 
@@ -81,7 +80,6 @@ return this.chatClient.prompt()
 
 AI의 역할과 말투를 동적으로 구성하기 위해 `{aiName}`과 `{terms}` 변수가 포함된 `PromptTemplate`을 만들었다.
 
-![동적 PromptTemplate 실습 자료]({{ '/assets/images/spring-ai-practice-2026-09-09/04-prompt-template-slide.png' | relative_url }})
 
 ```java
 private static final String PROMPT_TEMPLATE = """
@@ -149,7 +147,6 @@ return chatClient.prompt()
 
 Advisor는 ChatClient 요청 전후에 공통 로직을 실행하는 인터셉터와 비슷하다. 로깅, 안전성 검사, 메모리, 검색 문서 추가, 성능 측정처럼 여러 요청에 반복되는 기능을 본래 비즈니스 코드와 분리할 수 있다.
 
-![SimpleLoggerAdvisor 적용 실습 자료]({{ '/assets/images/spring-ai-rag-practice-2026-09-10/01-advisor-slide.png' | relative_url }})
 
 ChatClient 요청에 `SimpleLoggerAdvisor`를 등록했다.
 
@@ -192,7 +189,6 @@ SimpleLoggerAdvisor 응답 로그
 
 RAG 검색에는 문서의 임베딩 벡터를 저장하고 유사도를 계산할 공간이 필요하다. 저장소에 포함된 실행 스크립트로 PostgreSQL 18과 pgvector 확장이 들어 있는 컨테이너를 실행했다.
 
-![pgvector 컨테이너 설치 실습 자료]({{ '/assets/images/spring-ai-rag-practice-2026-09-10/02-pgvector-install-slide.png' | relative_url }})
 
 ```bash
 cd spring-ai/pgvector
@@ -241,7 +237,6 @@ brew services stop postgresql@17
 
 `EmbeddingService`에서 헌법 제1조부터 제5조까지를 Spring AI `Document`로 만들었다. 각 문서에는 원문뿐 아니라 카테고리, 문서 유형과 조문 번호를 메타데이터로 넣었다.
 
-![헌법 문장을 Document로 저장하는 실습 자료]({{ '/assets/images/spring-ai-rag-practice-2026-09-10/05-embedding-code-slide.png' | relative_url }})
 
 ```java
 save(
@@ -288,7 +283,6 @@ DBeaver에서도 `vector_store`에 헌법 1~5조의 ID, 본문, 메타데이터�
 
 다음 단계에서는 외부 API 임베딩 대신 Docker에서 실행되는 오픈소스 BAAI/bge-m3 모델을 사용했다.
 
-![BAAI bge-m3 모델 전환 실습 자료]({{ '/assets/images/spring-ai-rag-practice-2026-09-10/08-baai-model-slide.png' | relative_url }})
 
 저장소의 모델 컨테이너를 실행하고 Ollama API에서 모델 목록을 확인했다.
 
@@ -350,7 +344,6 @@ OpenAI 모델에서 약 0.5402였던 점수가 bge-m3에서는 약 0.6263으로 
 
 마지막으로 TXT 문서만 처리하던 RAG-ETL에 PDF 처리를 추가했다. 대상 파일은 `대한민국형법(20250318).pdf`였다.
 
-![PDF RAG-ETL 확장 실습 자료]({{ '/assets/images/spring-ai-rag-practice-2026-09-10/10-pdf-etl-slide.png' | relative_url }})
 
 기존 `TxtEtlService`와 동일한 Extract-Transform-Load 구조를 유지하되, Extract 단계에서 `TextReader`를 `PagePdfDocumentReader`로 교체했다.
 
