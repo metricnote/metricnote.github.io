@@ -2,7 +2,7 @@
 layout: post
 title: "건물 특성과 에너지 효율성의 관계 분석"
 date: 2026-08-20 12:00:00 +0900
-category: [statistics, data-analysis]
+category: [data-analysis]
 tags: [EDA, linear-regression, Python, learning-note]
 ---
 
@@ -129,4 +129,3 @@ MAE는 실제값과 예측값 사이의 평균 절대오차다. 두 모델 모�
 ## 참고 자료
 
 - Tsanas, A. & Xifara, A. (2012). Energy Efficiency Dataset. UCI Machine Learning Repository.
-
