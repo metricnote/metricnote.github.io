@@ -2,7 +2,7 @@
 layout: post
 title: "Spring AI 실습: ChatClient부터 Structured Output, pgvector와 RAG까지"
 date: 2026-09-10 11:00:00 +0900
-category: [backend-cloud]
+category: [llm]
 tags: [Spring-AI, ChatClient, ChatOptions, PromptTemplate, SystemMessage, Structured-Output, Advisor, PostgreSQL, pgvector, Embedding, Ollama, BAAI, bge-m3, RAG, ETL, RewriteQueryTransformer, CompressionQueryTransformer, Java, Docker, learning-note]
 ---
 

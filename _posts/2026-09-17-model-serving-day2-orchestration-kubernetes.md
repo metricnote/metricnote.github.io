@@ -2,7 +2,7 @@
 layout: post
 title: "모델 서빙 Day 2: Airflow부터 KServe·Kubeflow까지 운영 자동화 실습"
 date: 2026-09-17 18:00:00 +0900
-category: [ai]
+category: [devops]
 tags: [Model-Serving, MLOps, Airflow, Ray-Serve, vLLM, Kubernetes, KServe, Kubeflow-Pipelines, Argo-Workflows, learning-note]
 ---
 

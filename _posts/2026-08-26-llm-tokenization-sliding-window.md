@@ -2,7 +2,7 @@
 layout: post
 title: "LLM은 문장을 어떻게 학습 데이터로 바꿀까: 토큰화부터 슬라이딩 윈도우까지"
 date: 2026-08-26 14:00:00 +0900
-category: [ai, llm]
+category: [llm]
 tags: [GPT, tokenization, BPE, PyTorch, learning-note]
 ---
 

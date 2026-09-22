@@ -2,7 +2,7 @@
 layout: post
 title: "은행 고객 이탈 예측: Validation AUC로 모델을 선택한 과정"
 date: 2026-09-03 17:10:00 +0900
-category: [ai, data-analysis]
+category: [machine-learning]
 tags: [Machine-Learning, Classification, Bank-Churn, CatBoost, XGBoost, LightGBM, Optuna, Ensemble, Feature-Engineering, AUC, Python, learning-note]
 ---
 

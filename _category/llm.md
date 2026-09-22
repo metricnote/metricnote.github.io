@@ -2,5 +2,5 @@
 category: [llm]
 hue: var(--c-themeHuePurple)
 title: LLM
-description: LLM을 구성하는 원리를 실습하며 정리한 기록
+description: LLM의 원리와 RAG, Agent 기반 서비스 개발을 실습한 기록
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Docker 실습 정리: Dockerfile부터 이미지 레이어와 OverlayFS까지"
 date: 2026-09-07 18:00:00 +0900
 last_modified_at: 2026-09-09 10:12:00 +0900
-category: [backend-cloud]
+category: [devops]
 tags: [Docker, Dockerfile, MariaDB, Volume, Bind-Mount, Nginx, Multi-Stage-Build, ENTRYPOINT, CMD, PID-1, SIGTERM, OverlayFS, rootfs, learning-note]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "모델 저장부터 FastAPI 서빙까지: 머신러닝 모델 서빙 실습 미리보기"
 date: 2026-09-15 15:00:00 +0900
-category: [ai]
+category: [devops]
 tags: [Model-Serving, MLOps, Scikit-learn, PyTorch, Keras, FastAPI, Pickle, TorchScript, Uvicorn, AIOps, learning-note]
 ---
 

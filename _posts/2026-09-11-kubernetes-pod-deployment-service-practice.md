@@ -2,7 +2,7 @@
 layout: post
 title: "Kubernetes 입문 실습: 이미지 배포부터 Pod, Deployment, Service까지"
 date: 2026-09-11 16:30:00 +0900
-category: [backend-cloud]
+category: [devops]
 tags: [Kubernetes, K8s, Docker, Harbor, Pod, Deployment, ReplicaSet, Service, EndpointSlice, Port-Forward, Rolling-Update, learning-note]
 ---
 

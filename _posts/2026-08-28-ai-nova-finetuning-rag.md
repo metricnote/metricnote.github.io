@@ -2,7 +2,7 @@
 layout: post
 title: "사내 IT Helpdesk AI 실습: Base Model, Fine-tuning, RAG를 직접 비교해 보니"
 date: 2026-08-28 22:30:00 +0900
-category: [ai, llm]
+category: [llm]
 tags: [sLLM, Fine-tuning, RAG, LoRA, Docker, IT-Helpdesk, learning-note]
 ---
 

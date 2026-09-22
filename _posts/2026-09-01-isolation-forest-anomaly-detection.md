@@ -2,7 +2,7 @@
 layout: post
 title: "Isolation Forest로 주택 데이터 이상치 찾고 설명하기"
 date: 2026-09-01 17:30:00 +0900
-category: [ai, data-analysis]
+category: [machine-learning]
 tags: [Machine-Learning, Anomaly-Detection, Isolation-Forest, Decision-Tree, Random-Forest, Feature-Importance, Python, learning-note]
 ---
 

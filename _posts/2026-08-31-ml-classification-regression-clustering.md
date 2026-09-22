@@ -2,7 +2,7 @@
 layout: post
 title: "분류·회귀·군집화 실습으로 정리한 머신러닝의 세 가지 문제"
 date: 2026-08-31 17:00:00 +0900
-category: [ai, data-analysis]
+category: [machine-learning]
 tags: [Machine-Learning, Classification, Regression, Clustering, LightGBM, K-Means, Python, learning-note]
 ---
 
