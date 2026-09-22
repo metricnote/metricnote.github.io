@@ -1,12 +1,12 @@
 - title: LLM
   url: category/llm/
   hue: "var(--c-themeHuePurple)"
+- title: Machine Learning
+  url: category/machine-learning/
+  hue: "var(--c-themeHueOrange)"
 - title: Data Analysis
   url: category/data-analysis/
   hue: "var(--c-themeHueBlue)"
-- title: Statistics
-  url: category/statistics/
-  hue: "var(--c-themeHueGreen)"
-- title: Backend & Cloud
-  url: category/backend-cloud/
-  hue: "var(--c-themeHueOrange)"
+- title: DevOps
+  url: category/devops/
+  hue: "var(--c-themeHueRed)"
