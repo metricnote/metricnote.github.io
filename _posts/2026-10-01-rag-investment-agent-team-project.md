@@ -50,7 +50,7 @@ AI 신약개발은 단순한 기업 소개보다 **확인 가능한 사건**을 
 
 모든 조사가 끝난 후에만 투자 판단을 실행한다. 첫 번째 적격 기업이 발견되더라도 바로 종료하지 않고, 후보 4곳을 모두 평가하도록 설계했다. 그래야 여러 적격 기업을 비교할 수 있고, 적격 기업이 한 곳도 없을 때에도 각 기업의 탈락 사유와 재검토 조건을 제시할 수 있다.
 
-![LangGraph 기반 투자 평가 에이전트의 전체 실행 흐름]({{ '/assets/images/rag-investment-team-project/01-langgraph-architecture.jpg' | relative_url }})
+![LangGraph 기반 투자 평가 에이전트의 전체 실행 흐름]({{ '/assets/images/rag-investment-team-project/01-langgraph-architecture.png' | relative_url }})
 
 *그림 1. 후보 4곳을 순회하며 조사·판정·보고서 생성을 반복하는 LangGraph 실행 구조*
 
@@ -134,7 +134,7 @@ FAISS가 유사한 청크를 찾았다고 해서 그 내용이 질문의 답을 
 
 RAG에서 답을 찾지 못하면 웹 검색으로 보강하지만, 검색 결과의 요약문을 바로 근거로 사용하지는 않았다. 검색으로 URL 후보를 찾은 뒤 원문 페이지를 열어 관련 문단, 발행일, 접근일을 확인해 저장했다. 즉, RAG와 웹 검색 모두 최종적으로는 “어디에서 확인한 내용인지”를 추적할 수 있도록 설계했다.
 
-![Agentic RAG의 검색과 재검색 흐름]({{ '/assets/images/rag-investment-team-project/02-agentic-rag-flow.jpg' | relative_url }})
+![Agentic RAG의 검색과 재검색 흐름]({{ '/assets/images/rag-investment-team-project/02-agentic-rag-flow.png' | relative_url }})
 
 *그림 2. 검색 결과의 관련성을 검사하고, 부족하면 질문 재작성 또는 웹 검색으로 보강하는 흐름*
 
@@ -191,7 +191,7 @@ LLM에게 “이 기업에 투자해도 될까?”라고 바로 물으면 답변
 
 여기서 `+5`는 외부에서 검증된 절대 투자 기준이 아니라 이번 프로젝트의 운영 기준이다. 그래서 보고서에는 `+4`, `+5`, `+6`을 각각 적용한 민감도 분석도 함께 제시했다.
 
-![12개 위험요인별 Judge 평가 기준]({{ '/assets/images/rag-investment-team-project/03-judge-rubric.jpg' | relative_url }})
+![12개 위험요인별 Judge 평가 기준]({{ '/assets/images/rag-investment-team-project/03-judge-rubric.png' | relative_url }})
 
 *그림 3. 확인된 부정·긍정 근거와 기업 주장 수준을 구분한 12개 위험요인 평가표*
 
@@ -222,11 +222,11 @@ LLM에게 “이 기업에 투자해도 될까?”라고 바로 물으면 답변
 
 예를 들어 결과물은 경영진 이력, 소송, 경쟁 자료처럼 확인하지 못한 정보와 자금 조달·제조·해외 진출처럼 기업 주장에 의존한 정보를 한계점으로 따로 기록했다. 좋은 근거만 보여주는 것이 아니라 **무엇을 아직 모르는지도 결과의 일부로 제공한 것**이다.
 
-![생성된 투자 평가 보고서의 SUMMARY]({{ '/assets/images/rag-investment-team-project/04-report-summary.jpg' | relative_url }})
+![생성된 투자 평가 보고서의 SUMMARY]({{ '/assets/images/rag-investment-team-project/04-report-summary.png' | relative_url }})
 
 *그림 4. 판정, 합계 점수, 핵심 이유와 재검토 조건을 압축한 실제 출력 SUMMARY*
 
-![실제 보고서의 12항목 점수와 근거 상태]({{ '/assets/images/rag-investment-team-project/05-score-evidence-table.jpg' | relative_url }})
+![실제 보고서의 12항목 점수와 근거 상태]({{ '/assets/images/rag-investment-team-project/05-score-evidence-table.png' | relative_url }})
 
 *그림 5. 항목별 점수뿐 아니라 확인됨·기업 주장만·찾지 못함을 함께 기록한 평가표*
 
